@@ -7,7 +7,8 @@ from EventManage import views
 import EventManage
 
 urlpatterns = [
-    path('',views.index,name='home'),
+    path('',views.index,name='index'),
+    path('eventregistration', views.eventRegistration, name='event')
 
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
