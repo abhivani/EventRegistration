@@ -1,7 +1,5 @@
-from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 
-# Create your views here.
 
 
 def index(request):
@@ -10,3 +8,6 @@ def index(request):
 
 def eventRegistration(request):
     return render(request,'EventManage/EventRegistration.html')
+
+def login(request):
+    return  render(request,'EventManage/login.html')
